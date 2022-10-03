@@ -34,4 +34,7 @@ video {
         transform: rotateY(180deg);
         /* margin: 2px; */
     }
+    .main{
+        height: 90vh;
+    }
 }
