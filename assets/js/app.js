@@ -22,32 +22,6 @@ function getDateTime() {
     return dateTime;
 }
 setInterval(function(){
-    currentTime = getDateTime();
+    let currentTime = getDateTime();
     document.getElementById("time").innerHTML = currentTime;
 }, 100);
-
-// $("#new-meeting").click(() => {
-//      var code = makeid(10);
-//      window.location.href = `/${code}`;
-
-// })
-
-$("#join-meeting").click(() => {
-     var code = $("#meeting-code").val();
-     if (code) {
-          window.location.href = `/${code}`;
-     }else{
-          alert('Please enter meeting code')
-     }
-})
-
-function makeid(length) {
-     var result           = '';
-     var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-     var charactersLength = characters.length;
-     for ( var i = 0; i < length; i++ ) {
-          result += characters.charAt(Math.floor(Math.random() * charactersLength));
-     }
-     return result;
-}
-
