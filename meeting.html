@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+		<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="/assets/css/style.css">
+		<link rel="icon" type="image/png" href="/assets/image/logo.png"/>
+		<link rel="icon" type="image/png" href="/assets/image/logo.png"/>
+		<title>SLMeet</title>
+	</head>
+    <body>
+        <div class="video-container">
+            <div class="col-md-6 col-sm-12">
+                <video id="webcamVideo" autoplay playsinline></video>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <video id="remoteVideo" autoplay playsinline></video>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-around m-5">
+            <div class="col-md-2 m-2">
+                <span>Step 1: Open Webcam</span>
+                <button id="webcamButton" class="btn btn-primary form-control" >
+                    <i class="fa fa-video"></i> Start webcam
+                </button>
+            </div>
+            <div class="col-md-2 m-2">
+                <span>Step 2: Generate code</span>
+
+                <button id="callButton" class="btn btn-success form-control" disabled>
+                    <i class="fa fa-phone"></i>
+                    New Meeting
+                </button>
+            </div>
+            <div class="col-md-4 m-2">
+                <span>Step 2: Join With Code</span>
+
+                <div class="input-group">
+                    <input type="text" class="form-control" id="callInput" placeholder="Enter Meeting Code" >
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-success" id="answerButton" type="button">Join</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 m-2">
+                <span>Step 3: End Call</span>
+
+                <button id="hangupButton" class="btn btn-danger form-control" disabled>
+                    <i class="fa fa-phone"></i>Hangup
+                </button>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+		<script type="module" src="/main.js"></script>
+	</body>
+</html>
